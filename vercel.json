@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "rewrites": [
+    { "source": "/config.js", "destination": "/js/config.js" },
+    { "source": "/_next/static/css/:path*", "destination": "/css/:path*" },
+    { "source": "/_next/static/chunks/app/:path*", "destination": "/js/:path*" },
+    { "source": "/_next/static/chunks/:path*", "destination": "/js/:path*" },
+    { "source": "/_next/static/fonts/:path*", "destination": "/fonts/:path*" },
+    { "source": "/_next/static/media/:path*", "destination": "/fonts/:path*" }
+  ]
+}
